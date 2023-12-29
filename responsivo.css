@@ -1,0 +1,57 @@
+@media screen and (max-width: 1100px) {
+    .limitar-espaco{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    button{
+        width: 100%;
+    }
+
+    .secao-img{
+        flex-direction: column;
+        height: 100%;
+        margin-top: 15px;
+    }
+
+    .img-principal, .img-quadro, .img-secundaria{
+        width: 100%;
+    }
+
+    .img-principal, .img-secundaria{
+        height: 220px;
+        margin-top: 15px;
+    }
+
+    /* area ofertas */
+
+    .secao-img2{
+        gap: 85px;
+    }
+
+    .parte-tres{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parte-tres div{
+        width: 300px;
+    }
+
+    .parte-tres div:first-child{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .form-campo-duplo div{
+        width: 100%;
+    }
+
+    .radio{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    height: 100vh;
+    font-size: 14px;
+}
+
+.limitar-espaco{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #fff;
+}
+
+header .div-logo{
+    display: flex;
+    gap: 5px;
+    padding: 15px;
+}
+
+header .div-logo h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+header .div-logo img{
+    width: 27px;
+    height: 100%;
+}
+
+/* plano de fundo */
+
+.plano-de-fundo{
+    background-image: url(/assets/bahia.jpg);
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* div central */
+
+.div-central{
+    padding: 100px 0;
+}
+
+
+/* cabeçalho do form */
+
+.form-header{
+    background-color: #5d15d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+}
+
+.form-header h2{
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.form-header img{
+    width: 23px;
+    height: 100%;
+    rotate: -45deg;
+}
+
+/* corpo do fomrulario */
+
+input, select, label{
+    margin: 7px 0;
+    font-size: 1rem;
+}
+
+.limitar-form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-weight: 600;
+}
+
+.form-campo-unico{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-campo-unico input{
+    width: 100%;
+}
+
+.form-campo-duplo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-campo-duplo div{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+}
+
+.radio{
+    display: flex;
+    justify-content: flex-start;    
+    gap: 30px;
+    width: calc(50% - 10px);
+}
+
+.radio div {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    width: 100px;
+}
+
+input, select{
+    padding: 5px;
+}
+
+button{
+    background-color: #5d15d1;
+    color: #fff;
+    border: none;
+
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    padding: 8px 10px;
+    width: 160px;
+    border-radius: 2px;
+}
+
+button:hover{
+    opacity: .8;
+}
+
+
+
+/* segunda parte */
+
+.parte-dois{
+    background-color: #80808029;
+    height: 100%;
+}
+
+.div-central2{
+    padding-bottom: 100px;
+}
+
+.textos{
+    padding-top: 30px;
+
+}
+
+.textos h2, .textos p{
+    margin-bottom: 10px;
+}
+
+/* boxes imagens */
+
+.secao-img{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+}
+
+.img-principal{
+    width: calc(50% - 10px);
+    height: 100%;
+    position: relative;
+}
+.img-principal img, .img-secundaria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-quadro{
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-secundaria{
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    position: relative;
+}
+
+
+.legenda-card{
+    color: #dadada;
+    background-color: rgba(0, 0, 0, 50%);
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    width: 100%;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* imagem dupla */
+
+.legenda-card2{
+    background-color: #fff;
+    padding: 10px 5px;
+}
+.legenda-card2:first-child{
+    font-weight: 600;
+}
+.legenda-card2 p{
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+
+/* footer */
+
+footer{
+    background-color: #5d15d1;
+}
+
+.parte-tres{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #dadada;
+}
+
+.parte-tres div h3{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.parte-tres div p{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.contato p:nth-child(2)::before{
+    content: "";
+    background-image: url(/assets/local.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.contato p:nth-child(3)::before{
+    content: "";
+    background-image: url(/assets/telefone.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.contato p:nth-child(4)::before{
+    content: "";
+    background-image: url(/assets/email.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.redes p:nth-child(2)::before{
+    content: "";
+    background-image: url(/assets/fb.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.redes p:nth-child(3)::before{
+    content: "";
+    background-image: url(/assets/ig.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.redes p:nth-child(4)::before{
+    content: "";
+    background-image: url(/assets/tt.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
